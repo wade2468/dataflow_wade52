@@ -10,7 +10,7 @@ dataflow_wade52
 
 #### set pipenv
 
-    pipenv --python ~/.pyenv/versions/3.8.10/bin/python
+    pipenv --python ~/.pyenv/versions/3.10.12/bin/python
 
 #### 安裝 repo 套件
 
@@ -30,40 +30,40 @@ dataflow_wade52
 
 #### build docker image
 
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.1 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.1.arm64 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.2 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.2.arm64 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.3 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.3.arm64 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.4 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.4.arm64 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.5 .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.5.arm64 .
-    docker build -f gce.with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.6.gce .
-    docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.7 .
-    docker build -f gce.with.env.cache.Dockerfile -t linsamtw/tibame_dataflow:0.0.8 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.1 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.1.arm64 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.2 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.2.arm64 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.3 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.3.arm64 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.4 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.4.arm64 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.5 .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.5.arm64 .
+    docker build -f gce.with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.6.gce .
+    docker build -f with.env.Dockerfile -t wade2468/tibame_dataflow:0.0.7 .
+    docker build -f gce.with.env.cache.Dockerfile -t wade2468/tibame_dataflow:0.0.8 .
 
 #### push docker image
 
-    docker push linsamtw/tibame_dataflow:0.0.1
-    docker push linsamtw/tibame_dataflow:0.0.1.arm64
-    docker push linsamtw/tibame_dataflow:0.0.2
-    docker push linsamtw/tibame_dataflow:0.0.2.arm64
-    docker push linsamtw/tibame_dataflow:0.0.3
-    docker push linsamtw/tibame_dataflow:0.0.3.arm64
-    docker push linsamtw/tibame_dataflow:0.0.4
-    docker push linsamtw/tibame_dataflow:0.0.4.arm64
-    docker push linsamtw/tibame_dataflow:0.0.5
-    docker push linsamtw/tibame_dataflow:0.0.5.arm64
-    docker push linsamtw/tibame_dataflow:0.0.6.gce
-    docker push linsamtw/tibame_dataflow:0.0.7
-    docker push linsamtw/tibame_dataflow:0.0.8
+    docker push wade2468/tibame_dataflow:0.0.1
+    docker push wade2468/tibame_dataflow:0.0.1.arm64
+    docker push wade2468/tibame_dataflow:0.0.2
+    docker push wade2468/tibame_dataflow:0.0.2.arm64
+    docker push wade2468/tibame_dataflow:0.0.3
+    docker push wade2468/tibame_dataflow:0.0.3.arm64
+    docker push wade2468/tibame_dataflow:0.0.4
+    docker push wade2468/tibame_dataflow:0.0.4.arm64
+    docker push wade2468/tibame_dataflow:0.0.5
+    docker push wade2468/tibame_dataflow:0.0.5.arm64
+    docker push wade2468/tibame_dataflow:0.0.6.gce
+    docker push wade2468/tibame_dataflow:0.0.7
+    docker push wade2468/tibame_dataflow:0.0.8
 
 #### pull docker image
 
-    docker pull linsamtw/tibame_dataflow:0.0.1
-    docker pull linsamtw/tibame_dataflow:0.0.2
+    docker pull wade2468/tibame_dataflow:0.0.1
+    docker pull wade2468/tibame_dataflow:0.0.2
 
 ## deploy-airflow:
 	DOCKER_IMAGE_VERSION=0.0.1 docker stack deploy --with-registry-auth -c docker-compose-airflow.yml airflow
