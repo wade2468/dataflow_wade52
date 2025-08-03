@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "244e733415774a04f0653bed7f797ec4445257e799800a009ae8624e4896b07b"
+            "sha256": "57787d97571607135724f80cea0583d339d31fd9f111821055e6ca46c191178b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -180,6 +180,14 @@
             "index": "pypi",
             "version": "==3.6.0"
         },
+        "apache-airflow-providers-cncf-kubernetes": {
+            "hashes": [
+                "sha256:5aa1b793744355708b5d3046b30b493c66833ed893906f07992818d7801da494",
+                "sha256:da73bae7e5739432bb7bd9cde217233cc4b6353d234d8091920c224a3a5cb691"
+            ],
+            "index": "pypi",
+            "version": "==6.1.0"
+        },
         "apache-airflow-providers-common-sql": {
             "hashes": [
                 "sha256:1517f5048bb4891cd648d8809a27a59f536add558116027e369610e5dc356497",
@@ -190,11 +198,11 @@
         },
         "apache-airflow-providers-docker": {
             "hashes": [
-                "sha256:2782dd006fb0b6caf592cb207f97cf01abb4743f2e06562e9e361147b967dbb4",
-                "sha256:3584ded68589d60ea50a9c96b32da22055542b40cb46a1ae4b58cc2e77b67d81"
+                "sha256:563c8d51a3e618869c5e932e855ca1888ca74facdb93d1422f96393e6fef8737",
+                "sha256:6104bc540a61e4733035c50eba5ee9d7cb728509df3ed3f383ff5500c5842682"
             ],
             "index": "pypi",
-            "version": "==3.0.0"
+            "version": "==3.4.0"
         },
         "apache-airflow-providers-ftp": {
             "hashes": [
@@ -292,7 +300,7 @@
                 "sha256:03f829f5bb1923180821643f8753b0502c3b682293992485b0eef2807afa5cba",
                 "sha256:63579f9a0628e06278f7e47b7d7d5b6ce20dc65c5e96a6f3ca99a6adca0396e8"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
             "version": "==2.2.1"
         },
         "billiard": {
@@ -762,7 +770,7 @@
                 "sha256:52f35bf0985354d7fb7b876e2eb0e0b141aaff865a22ff6cc33d9a18aa987978",
                 "sha256:8085d6757505b6f3291a2638c84d207e8f0ad0de662d1f46aa2f77e658a0c976"
             ],
-            "markers": "python_version >= '3.9' and python_version < '4'",
+            "markers": "python_version >= '3.9' and python_version < '4.0'",
             "version": "==4.7.1"
         },
         "flask-limiter": {
@@ -936,7 +944,7 @@
                 "sha256:8e12297c5b45cfc20d629b83e1233f83a1c7d5f830f24f31bc5bb8816c0cda1b",
                 "sha256:e4adadd36e35eeeb8537b926840372c3080c2f5a6909d44aa1bacbced2260bb1"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
             "version": "==4.2.3"
         },
         "gcloud-aio-bigquery": {
@@ -944,7 +952,7 @@
                 "sha256:4a3c775c2677c0588e9caeb2df40d81a54b31c174e562a527cb08e023c4408a3",
                 "sha256:524ae3cc14c1af6977a358829cc673b4471159caa7d62bba7f2d9334262bcd4a"
             ],
-            "markers": "python_version >= '3.8' and python_version < '4'",
+            "markers": "python_version >= '3.8' and python_version < '4.0'",
             "version": "==7.1.0"
         },
         "gcloud-aio-storage": {
@@ -952,7 +960,7 @@
                 "sha256:0a8cc27223cea05ad27117fa574ce8697ec32a252382cbfdfe54df0678e92d03",
                 "sha256:47be865222d22fdf873cd5a4af9a285d7b64b176d4d92f1773ecacd52a6a8c6f"
             ],
-            "markers": "python_version >= '3.8' and python_version < '4'",
+            "markers": "python_version >= '3.8' and python_version < '4.0'",
             "version": "==9.2.0"
         },
         "gcsfs": {
@@ -1601,7 +1609,7 @@
                 "sha256:0035f33228693ed3767ee49d937bac424318db173fef4d2d0170b3215f254d9d",
                 "sha256:1f45c0bcb58b6f332f37c637632247c9b02bc6af0fdceb7ba7ce8d2ebbfb0926"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
             "version": "==0.15.4"
         },
         "grpcio": {
@@ -1795,6 +1803,21 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==5.5.4"
+        },
+        "kubernetes": {
+            "hashes": [
+                "sha256:cadb1cd7c44eae5b39b50316313343c0f2aff94529f067ec2ba44d38411158e3",
+                "sha256:dd58e286a53071bc8e32041f07f3c2236b3ed8ca5b9f57794a5077358f7ccb06"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==23.6.0"
+        },
+        "kubernetes-asyncio": {
+            "hashes": [
+                "sha256:01b0f22dbb9e83a333dc0d3c7b00bf76483cf18071a70dd022fdeaae04b81e93",
+                "sha256:48f3bd583eeb16fbeb0767b0e190039013c1a4a7f4af5178ca3a6a904a7b6aba"
+            ],
+            "version": "==24.2.3"
         },
         "lazy-object-proxy": {
             "hashes": [
@@ -2738,6 +2761,14 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.9.0.post0"
         },
+        "python-dotenv": {
+            "hashes": [
+                "sha256:31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc",
+                "sha256:a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab"
+            ],
+            "markers": "python_version >= '3.9'",
+            "version": "==1.1.1"
+        },
         "python-nvd3": {
             "hashes": [
                 "sha256:0115887289b3f751716ddd05c7b53ac5f05e71201e52496decdac453a50dcf7e"
@@ -3043,7 +3074,7 @@
                 "sha256:68635866661c6836b8d39430f97a996acbd61bfa49406748ea243539fe239762",
                 "sha256:e7bdbfdb5497da4c07dfd35530e1a902659db6ff241e39d9953cad06ebd0ae75"
             ],
-            "markers": "python_version >= '3.6' and python_version < '4'",
+            "markers": "python_version >= '3.6' and python_version < '4.0'",
             "version": "==4.9.1"
         },
         "setproctitle": {
@@ -3464,6 +3495,14 @@
                 "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"
             ],
             "version": "==0.2.13"
+        },
+        "websocket-client": {
+            "hashes": [
+                "sha256:17b44cc997f5c498e809b22cdf2d9c7a9e71c02c8cc2b6c56e7c2d1239bfa526",
+                "sha256:3239df9f44da632f96012472805d40a23281a991027ce11d2f45a6f24ac4c3da"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==1.8.0"
         },
         "websockets": {
             "hashes": [
