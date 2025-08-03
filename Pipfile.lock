@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "57787d97571607135724f80cea0583d339d31fd9f111821055e6ca46c191178b"
+            "sha256": "1221f366cc9b234238d29db675e44258799199a63f719f81f8ed7552ab315242"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -592,7 +592,6 @@
                 "sha256:3dd15cb27e8119a24c1a7b5c93f9f3b455855e0f73993b1c25921b2f646f1dcd",
                 "sha256:59b53160c60902c405cdec28d38356e09d40686659048893e026ecbd589516b1"
             ],
-            "markers": "python_version >= '3.6'",
             "version": "==4.8.0"
         },
         "configupdater": {
@@ -657,10 +656,6 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==41.0.7"
-        },
-        "dataflow": {
-            "editable": true,
-            "path": "."
         },
         "db-dtypes": {
             "hashes": [
@@ -1593,7 +1588,7 @@
                 "sha256:efc6dc8a792243c31f2f5674b670b3a95d46fa1c6a912b8e310d6f542e7b0712",
                 "sha256:f4bfbaa6096b1b7a200024784217defedf46a07c2eee1a498e94a1b5f8ec5728"
             ],
-            "markers": "python_version >= '3' and platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))",
+            "markers": "python_version >= '3' and (platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32'))))))",
             "version": "==3.2.3"
         },
         "grpc-google-iam-v1": {
@@ -2742,7 +2737,7 @@
                 "sha256:a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf",
                 "sha256:b9c13f1ab8b3b542f72e28f634bad4de758ab3ce4546e4301970ad6fa77c38be"
             ],
-            "markers": "python_version >= '3.1'",
+            "markers": "python_version > '3.0'",
             "version": "==3.2.3"
         },
         "python-daemon": {
@@ -2758,7 +2753,7 @@
                 "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3",
                 "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==2.9.0.post0"
         },
         "python-dotenv": {
@@ -3240,7 +3235,7 @@
                 "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
                 "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==1.17.0"
         },
         "sniffio": {
