@@ -1,15 +1,10 @@
-# # 使用 Ubuntu 20.04 作為基礎映像檔
-# FROM ubuntu:22.04
+# 使用 Ubuntu 20.04 作為基礎映像檔
+FROM ubuntu:22.04
 
-# # 更新套件列表，並安裝 Python 3.8 以及 pip（Python 套件管理工具）
-# RUN apt-get update && \
-#     apt-get install python3.10 -y && \
-#     apt-get install python3-pip -y
-
-# 使用 Airflow 官方 image（已內建 Python 3.10 與 airflow 2.7.2）
-FROM apache/airflow:2.7.2-python3.10
-
-# 以上兩段切換
+# 更新套件列表，並安裝 Python 3.8 以及 pip（Python 套件管理工具）
+RUN apt-get update && \
+    apt-get install python3.10 -y && \
+    apt-get install python3-pip -y
 
 # 安裝特定版本的 pipenv（用於 Python 虛擬環境和依賴管理）
 RUN pip install pipenv==2022.4.8
